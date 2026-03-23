@@ -45,9 +45,11 @@ const { Content } = await render(entry);
 			<main class="wrapper">
 				<div class="stack gap-10 content">
 					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
-					<div class="content">
-						<Content />
-					</div>
+				</div>
+				<div class="content grid grid-cols-2 md:grod-cols-3 gap-4">
+					{entry.data.images.map((img) => (
+						<img src={img} class="w-full h-48 object-cover rounded-lg" />
+					))}
 				</div>
 			</main>
 		</div>

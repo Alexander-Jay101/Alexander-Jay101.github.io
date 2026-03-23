@@ -24,6 +24,12 @@
     "img_alt": {
       "type": "string"
     },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "$schema": {
       "type": "string"
     }
@@ -33,6 +39,7 @@
     "description",
     "publishDate",
     "tags",
-    "img"
+    "img",
+    "images"
   ]
 }

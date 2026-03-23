@@ -23,7 +23,7 @@ const projects = (await getCollection('work'))
 ---
 
 <BaseLayout>
-	<div class="stack gap-20 lg:gap-48">
+	<div class="stack gap-20 lg:gap-30">
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
@@ -32,7 +32,7 @@ const projects = (await getCollection('work'))
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Work</Pill>
+						<Pill><Icon icon="apature" size="1.33em" /> Photography</Pill>
 						<Pill><Icon icon="microphone-stage" size="1.33em" />About</Pill>
 						<Pill><Icon icon="pencil-line" size="1.33em" />Contact</Pill>
 					</div>
@@ -66,25 +66,12 @@ const projects = (await getCollection('work'))
 				</div>
 		</section>
 
-		<main class="wrapper stack gap-20 lg:gap-48">
+		<main class="wrapper stack gap-20 lg:gap-20">
 			<section class="section with-background with-cta">
-				<header class="section-header stack gap-2 lg:gap-4">
+				<header class="section-header stack gap-2 lg:gap-10">
 					<h3>Photography</h3>
-					<p>Take a look below at some of my featured work from the past few years.</p>
+					<p>Take a look at some of my featured work from the past few years.</p>
 				</header>
-
-				<div class="gallery">
-					<Grid variant="offset">
-						{
-							projects.map((project) => (
-								<li>
-									<PortfolioPreview project={project} />
-								</li>
-							))
-						}
-					</Grid>
-				</div>
-
 				<div class="cta">
 					<CallToAction href="/work/">
 						View All
@@ -261,6 +248,15 @@ const projects = (await getCollection('work'))
 		object-position: center;
 		padding: 2rem;
 		border-radius: 1.5rem;
+	}
+	
+	.mention-card.album-card{
+		height: 15rem;
+	}
+
+	.mention-card.album-card img{
+		aspect-ratio: 5/4;
+		object-fit: cover;
 	}
 
 	@media (min-width: 50em) {
