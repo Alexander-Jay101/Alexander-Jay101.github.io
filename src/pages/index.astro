@@ -48,6 +48,23 @@ const projects = (await getCollection('work'))
 
 			<Skills />
 		</div>
+		<section class="section with-background bg-variant">
+				<header class="section-header stack gap-2 lg:gap-4">
+					<h3>Experience</h3>
+					<p>Over the last 5 years I have had the opporunity to work a variety of rolls in both the private and public sector:</p>
+				</header>
+				<div class="gallery">
+					<Grid variant="small">
+						{
+							<li class="mention-card"><img alt="RN" src="/assets/companies/RN.png"/></li>
+							<li class="mention-card"><img alt="DSTL" src="/assets/companies/DSTL.png"/></li>
+							<li class="mention-card"><img alt="Thales" src="/assets/companies/Thales.png"/></li>
+							<li class="mention-card"><img alt="VMware" src="/assets/companies/VMware.png"/></li>
+							<li class="mention-card"><img alt="Sophos" src="/assets/companies/Sophos.png"/></li>
+						}
+					</Grid>
+				</div>
+		</section>
 
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
@@ -80,14 +97,14 @@ const projects = (await getCollection('work'))
 				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Volunteering</h3>
 					<p>
-						Outside of my paid rolls, I enjoy working within the local community
+						Outside of my paid rolls, I enjoy working within the local community. Here is a selection of some of the organisations I have worked with:
 					</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['Nope', 'Still no', 'Another No', 'more noooo.', 'final nope'].map((brand) => (
+							['Artz Center', 'Littlegarth School', 'Transforming Lives for Good', 'Colchester Institute', 'Samuel Ward Academy','Citizens Advice','Barclays Digital Eagles', 'Halstead Community Choir','St. John\'s and Highwoods Community Association'].map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>
@@ -218,7 +235,6 @@ const projects = (await getCollection('work'))
 		.gallery {
 			grid-area: gallery;
 		}
-
 		.cta {
 			grid-area: cta;
 		}
@@ -239,10 +255,25 @@ const projects = (await getCollection('work'))
 		box-shadow: var(--shadow-sm);
 	}
 
+	.mention-card img {
+		aspect-ratio: 16 / 9;
+		object-fit: scale-down;
+		object-position: center;
+		padding: 2rem;
+		border-radius: 1.5rem;
+	}
+
 	@media (min-width: 50em) {
 		.mention-card {
 			border-radius: 1.5rem;
 			height: 9.5rem;
 		}
+	}
+	.mention-card img {
+		aspect-ratio: 16 / 9;
+		object-fit: scale-down;
+		object-position: center;
+		padding: 2rem;
+		border-radius: 1.5rem;
 	}
 </style>
