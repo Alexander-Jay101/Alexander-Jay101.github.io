@@ -4,15 +4,17 @@ publishDate: 2026-03-23 00:00:00
 img: /assets/photography/RNLI/Lifeboat.jpg
 img_alt: Lifeboat on ramp ready to be launched 
 description: |
-  Trip hello
+  Photos of RNLI training 
 tags:
   - Travel
 images:
   - src: /assets/photography/RNLI/Lifeboat2.jpg
     title: "Launch Ready"
-    description: "Crew preparing the lifeboat"
+    description: "Boat waiting on ramp"
   - src: /assets/photography/RNLI/Lifeboat3.jpg
-    title: "At Sea"
-    description: "Out on exercise"
+  - src: /assets/photography/RNLI/Lifeboat4.jpg
+  - src: /assets/photography/RNLI/Lifeboat5.jpg
+  - src: /assets/photography/RNLI/Lifeboat6.jpg
+  - src: /assets/photography/RNLI/Lifeboat7.jpg
 ---
-Ahhh thats why
+Description of trip to watch launch
