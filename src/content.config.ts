@@ -13,7 +13,12 @@ export const collections = {
 			tags: z.array(z.string()),
 			img: z.string(),
 			img_alt: z.string().optional(),
-			images: z.array(z.string())
+			images: z.array(
+				z.object({
+				src: z.string(),
+				title: z.string().optional(),
+				description: z.string().optional(),
+			})),
 		}),
 	}),
 };

@@ -27,7 +27,21 @@
     "images": {
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "src": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "src"
+        ]
       }
     },
     "$schema": {
