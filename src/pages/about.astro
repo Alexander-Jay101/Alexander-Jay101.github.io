@@ -43,17 +43,19 @@ import Pill from '../components/Pill.astro';
 			<section>
 				<h2 class="section-title">Education</h2>
 				<div class="content">
-					<Pill>2023-2026</Pill>
-					<p><b>Cranfield University</b></p>
-					<p> - Postgraduate Diploma in Engineering competence</p>
-				</br>
-					<Pill>2019-2023</Pill>
-					</br>
-					<p><b>Edge Hill University</b> </p>
-					<p> - Bachelor of Science in Computing (Networking, Cybersecurity and Digital Forensics) - First Class with Honours</p>
-					<Pill>2017-2019</Pill>
-					<p><b>Colchester Institute</b> </p>
-					<p> - BTEC Level 3 Extended Diploma in Computing - D* D* D</p>
+					<div class="education">
+						<Pill>2023-2026</Pill>
+						<p><b>Cranfield University</b></p>
+						<p> - Postgraduate Diploma in Engineering competence</p>
+						</br>
+						<Pill>2019-2023</Pill>
+						</br>
+						<p><b>Edge Hill University</b> </p>
+						<p> - Bachelor of Science in Computing (Networking, Cybersecurity and Digital Forensics) - First Class with Honours</p>
+						<Pill>2017-2019</Pill>
+						<p><b>Colchester Institute</b> </p>
+						<p> - BTEC Level 3 Extended Diploma in Computing - D* D* D</p>
+					</div>
 				</div>
 			</section>
 			<section>
@@ -110,6 +112,10 @@ import Pill from '../components/Pill.astro';
 		text-decoration-color: currentColor;
 	}
 
+	.roles {
+		display: none;
+	}
+
 	@media (min-width: 50em) {
 		.about {
 			display: grid;
@@ -123,6 +129,11 @@ import Pill from '../components/Pill.astro';
 		section {
 			display: contents;
 			font-size: var(--text-lg);
+		}
+		.roles Pill{
+			margin-top: 0.5rem;
+			display: flex;
+			gap: 0.5rem;
 		}
 	}
 </style>
